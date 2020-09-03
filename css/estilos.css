@@ -1,0 +1,168 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* -------------Variables */
+:root{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:#313337;
+/* Tipografía */
+--normal:12px;
+/* Espaciado */
+--space:10px;
+/* Box shadow */
+--box:0px 0 2px 1px #e6e5e9;
+}
+
+/* -------------Variables */
+html,body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+nav{
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+
+}
+
+nav li a{
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: var(--white-color);
+}
+
+/* ------------------------ Main section */
+
+.main_section{
+  padding: 20%;
+  text-align: center;
+  display: flex;
+  background-position: center top;
+}
+
+.section_menciones{
+  padding: 15%;
+  background-position: center top;
+}
+
+
+.titulos{
+  text-align: center;
+}
+
+.titulos_menciones{
+  margin-top: -440px;
+  text-align: center;
+}
+
+.lo_mas{
+  padding: 20px;
+  text-align: left;
+}
+
+.lo_mas .content{
+  box-shadow: var(--box);
+}
+
+.products{
+  background-image: url("../images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding:20%;
+  display: flex;
+}
+
+.product{
+  padding: var(--space);
+  margin-top: -440px;
+  align-items: center;
+}
+.product .content{
+  background-color: var(--white-color);
+  padding: var(--space);
+  box-shadow: var(--box);
+}
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border:0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #5e9e22;
+}
+
+.menciones{
+  display: flex;
+  background-color: white; 
+}
+
+.mencion{
+  box-shadow: var(--box);
+}
+
+.img_mencion{
+  text-align: center;
+}
+
+.nombre{
+  padding-left: 10px;
+}
+
+.modulo_pago{
+  background-color:var(--white-color);
+  box-shadow: var(--box);
+  padding:var(--space-2);
+  }
+  
+.modulo_pago_images{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin:auto;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}

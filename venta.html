@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un sitio de producto genial">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="scripts/venta.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>BRAND📦</title>
+
+  </head> <!-- Cierra head -->
+  <body>
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt=""></a>
+      <ul>
+        <li>
+          <a href="faqs.html">Faqs</a></li>
+        <li>
+          <a href="#">Producto y descripción</a></li>
+      </ul>
+    </nav>
+
+    <!-- Empiezan Formulario Venta -->
+    
+    <div class="main_section">
+          <div class="modulo_pago">
+            <div class="modulo_pago_images">
+              <img src="images/box2.png" alt="">
+            </div>
+            <h3>
+              Producto 1
+            </h3>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con gatitos
+            </p>
+          </div>
+          <div class="modulo_pago">
+              <form id="formconfirm" method="post">
+                <label for="name">Nombre</label>
+                <br>
+                <input type="text" placeholder="" name="name" class="data" id="nombrePago">
+                <br>
+                <label for="email">E-mail</label>
+                <br>
+                <input type="text" placeholder="" name="email" class="data" id="emailPago">
+                <br>
+                <label for="phone">Teléfono</label>
+                <br>
+                <input type="text" placeholder="" name="phone" class="data" id="telefonoPago">
+                <br>
+                <input type="button" class="main_button" name="submit" value="Confirmar pago" id="confirmarPago" onclick="sendEmail()">
+              </form>
+
+          </div>
+        
+      
+
+    </div>
+
+    <!-- Inicio de footer -->
+    <footer>
+      <div class="option"> <a href="">Términos y condiciones</a> </div>
+      <div class="option"> <a href="">Contacto@brand.com</a></div>
+    </footer>
+    <!-- Fin de Footer -->
+
+    <!-- Script -->
+    <script src="scripts/script.js"></script>
+    
+  </body> <!-- Cierra body -->
+</html> <!-- Cierra html -->
