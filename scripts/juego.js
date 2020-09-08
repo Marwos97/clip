@@ -11,7 +11,7 @@ tabla.classList.add("table")
 var tbody = document.createElement("tbody");
 console.log(numeroAleatorio)
 function calcular(numero, numeroInresado){
-    if (intentos==10){
+    if (intentos==4){
         alert("Supero el numero de intentos")
     }else{
         if (numeroInresado == numero){
