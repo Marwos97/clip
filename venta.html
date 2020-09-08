@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Este es un sitio de producto genial">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/estilos.css">
+
 
     <script src="scripts/venta.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -22,37 +25,54 @@
     </nav>
 
     <!-- Empiezan Formulario Venta -->
-    
-    <div class="main_section">
-          <div class="modulo_pago">
-            <div class="modulo_pago_images">
-              <img src="images/box2.png" alt="">
-            </div>
-            <h3>
-              Producto 1
-            </h3>
-            <p>
-              Miles de productos hay en el mercado, pero nada como una caja con gatitos
-            </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="modulo_pago_images">
+            <img src="images/box2.png" class="img_fluid">
           </div>
-          <div class="modulo_pago">
-              <form id="formconfirm" method="post">
-                <label for="name">Nombre</label>
-                <br>
-                <input type="text" placeholder="" name="name" class="data" id="nombrePago">
-                <br>
-                <label for="email">E-mail</label>
-                <br>
-                <input type="text" placeholder="" name="email" class="data" id="emailPago">
-                <br>
-                <label for="phone">Teléfono</label>
-                <br>
-                <input type="text" placeholder="" name="phone" class="data" id="telefonoPago">
-                <br>
-                <input type="button" class="main_button" name="submit" value="Confirmar pago" id="confirmarPago" onclick="sendEmail()">
-              </form>
+          <h3 class="text-center">
+            Producto 1
+          </h3>
+          <p class="text-center">
+            Miles de productos hay en el mercado, pero nada como una caja con gatitos
+          </p>
+        </div>
+        
 
-          </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <form id="formconfirm" method="post">
+            <div class="form-group">
+              <label for="mail">email</label>
+              <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+             
+            </div>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="form-group">
+              <label for="tel">Telefono de contacto</label>
+              <input type="text" class="form-control" id="tel">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            <a href="index.html" class="btn btn-primary btn-block">Regresar a menu principal</a>
+          </form>
+          
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <div class="main_section">
+          
         
       
 
@@ -66,6 +86,9 @@
     <!-- Fin de Footer -->
 
     <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
     
   </body> <!-- Cierra body -->
